@@ -1,0 +1,16 @@
+@import "_css_helpers/destyle.css";
+@import "_css_helpers/variables.css";
+@import "_css_helpers/base.css";
+
+
+/*parts*/
+@import "parts/header/header.css";
+@import "parts/footer/footer.css";
+
+
+/*blocks*/
+@import "blocks/hero-image/hero-image.css";
+@import "blocks/services/services.css";
+@import "blocks/projects/projects.css";
+@import "blocks/contacts/contacts.css";
+@import "blocks/article/article.css";

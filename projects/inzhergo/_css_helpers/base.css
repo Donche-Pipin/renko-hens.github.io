@@ -1,0 +1,87 @@
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: color-mod(var(--black) tint(20%));
+}
+
+
+/* Hide class "services-title" for remaining part of the content */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  height: var(--button-size);
+  padding: 0 calc(var(--button-size) / 2);
+  border: 2px solid var(--button-color);
+  border-radius: var(--button-size);
+  font-size: var(--font-size);
+  color: var(--button-text-color);
+  background-color: transparent;
+  transition-property: border, background-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+
+/* themes */
+.button {
+  --button-color: var(--control-color);
+  --button-text-color: var(--color-text);
+}
+
+.button_theme-light {
+  --button-color: var(--color-text-light);
+  --button-text-color: var(--color-text-light);
+}
+
+
+/* sizes */
+.button_size-s {
+  --button-size: var(--size-s);
+}
+
+.button {
+  --button-size: var(--size-m);
+}
+
+.button_size-l {
+  --button-size: var(--size-l);
+}
+
+.button_size-xl {
+  --button-size: var(--size-xl);
+}
+
+
+
+/* states */
+
+.button:hover {
+  --button-color: var(--control-color-hover);
+
+  background-color: var(--button-color);
+  transition-duration: .1s;
+}
+
+/* .button:active {
+  --button-color: var(--control-color-active);
+
+  background-color: var(--button-color);
+  transition-duration: .1s;
+}
+
+.button:focus {
+  --button-color: var(--control-color-focus);
+
+  background-color: var(--button-color);
+  transition-duration: .1s;
+} */

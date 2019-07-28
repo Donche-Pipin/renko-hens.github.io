@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <title>Инжерго - {% block title %}{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="referrer" content="origin-when-cross-origin" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700" rel="stylesheet"> 
+  <link href="/css/main.bundle.css" rel="stylesheet">
+  {% block head %}{% endblock %}
+</head>
+<body class="body">
+  {% include './parts/header/header.html' %}
+  
+  {% block content %}{% endblock %}
+  
+  {% include './parts/footer/footer.html' %}
+
+  <script src="/js/main.bundle.js"></script>
+</body>
+</html>

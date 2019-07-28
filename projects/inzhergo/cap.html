@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <link
+    rel="stylesheet"
+    href="/cap.css"
+  >
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+    rel="stylesheet"
+  >
+  <title>На сайте ведутся технические работы</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: rgb(51, 51, 51);
+    }
+
+    .cap {
+      height: 150px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      padding: 0 16px;
+    }
+
+    .cap__title {
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 0.125em;
+    }
+
+    .cap__info {
+      font-size: 16px;
+      color: rgb(112, 112, 112)
+    }
+
+    .cap__info+.cap__info {
+      margin-top: 1em;
+    }
+
+    .contacts__link {
+      color: #0085b2;
+    }
+
+    .contacts__link:hover {
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <section class="cap">
+
+    <h1 class="cap__title">
+      Инжерго
+    </h1>
+
+    <p class="cap__info">
+      На сайте ведутся технические работы
+    </p>
+
+    <p class="cap__info">
+
+      <div>
+        Телефон:
+
+        <a
+          href="tel:+79650340340"
+          class="contacts__link"
+        >
+          +7 (965) 034-03-40
+        </a>
+      </div>
+
+      <div>
+        E-mail:
+
+        <a
+          href="mailto:info@inzhergo.ru"
+          class="contacts__link"
+        >
+          info@inzhergo.ru
+        </a>
+      </div>
+    </p>
+  </section>
+</body>
+</html>

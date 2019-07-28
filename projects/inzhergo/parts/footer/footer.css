@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--black);
+  padding: 24px 0;
+}
+
+.footer__container {
+  width: var(--max-screen-indent);
+  padding: 0 24px;
+  margin: 0 auto;
+  color: var(--color-text-light);
+}
+
+.footer__logo {
+  font-weight: 700;
+  text-transform: uppercase;
+}

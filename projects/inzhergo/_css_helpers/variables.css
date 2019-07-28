@@ -1,0 +1,57 @@
+:root {
+  /* base indentation */
+  --max-screen-indent: 1280px;
+
+  /* base colors */
+  --white: #fff;
+  --black: #000;
+  --ligthgray: #f3f3f3;
+  --blue: #0085b2;
+
+  /*button color*/
+  --control-color: var(--blue);
+  --control-color-hover: color-mod(var(--control-color) tint(24%));
+  --control-color-active: color-mod(var(--control-color) tint(48%));
+  --control-color-focus: color-mod(var(--control-color) whiteness(24%));
+
+
+  /* base size */
+  --size-s: 24px;
+  --size-m: 32px;
+  --size-l: 40px;
+  --size-xl: 48px;
+
+
+  /* text */
+  --font-family: 'Montserrat', sans-serif;
+  --font-size: 16px;
+  --font-weigth-regular: 400;
+  --font-weigth-bold: 600;
+
+  --heading-font-size-xs: 20px;
+  --heading-font-size-s: 24px;
+  --heading-font-size-m: 32px;
+  --heading-font-size-l: 40px;
+
+  --line-height: 1.5;
+  --color-text: color-mod(var(--black) tint(20%));
+  --color-text-light: color-mod(var(--white) shade(5%));
+
+}
+
+@custom-media --mobile-max-v (max-width: 480px);
+@custom-media --mobile-min-v (min-width: 481px);
+
+@custom-media --mobile-max-h (max-width: 667px);
+@custom-media --mobile-min-h (min-width: 668px);
+
+@custom-media --tablet-max-v (max-width: 768px);
+@custom-media --tablet-v (min-width: 481px) and (max-width: 768px);
+@custom-media --tablet-min-v (min-width: 769px);
+
+@custom-media --tablet-max-h (max-width: 1024px);
+@custom-media --tablet-min-h (min-width: 1025px);
+
+@custom-media --tablet-min-h (min-width: 1025px);
+@custom-media --tablet-h (min-width: 481px) and (max-width: 1024px);
+@custom-media --desktop-min (min-width: 1280px);
