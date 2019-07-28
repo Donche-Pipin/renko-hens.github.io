@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <title>Прайс-лист</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+  />
+  <meta
+    name="referrer"
+    content="origin-when-cross-origin"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700"
+    rel="stylesheet"
+  >
+  <link
+    href="assets/css/app.css"
+    rel="stylesheet"
+  >
+<link href="assets/css/app.css" rel="stylesheet"></head>
+
+<body>
+
+  <header class="main-header">
+
+    <section class="main-header__container">
+
+      <button
+        class="main-header__menu-button"
+        type="button"
+      >
+
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 28 16"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            y="2"
+            width="24"
+            height="4"
+          />
+          <rect
+            x="8"
+            y="10"
+            width="16"
+            height="4"
+          />
+          <rect
+            y="18"
+            width="24"
+            height="4"
+          />
+        </svg>
+      </button>
+
+      <a
+        href="index.html"
+        class="main-header__logotype"
+      >
+        Borodinski
+      </a>
+
+      <nav class="main-header__nav navigation">
+
+        <ul class="navigation__list">
+
+          <li class="navigation__item navigation__item--ease">
+
+            <a
+              href="index.html"
+              class="navigation__link"
+            >
+
+              <img
+                class="navigation__image"
+                src="assets/img/mini__logotype.png"
+                alt="Barbershop"
+              >
+            </a>
+          </li>
+
+          <li class="navigation__item">
+
+            <a
+              href="#"
+              class="navigation__link"
+            >
+              Информация
+            </a>
+          </li>
+
+          <li class="navigation__item">
+
+            <a
+              href="#"
+              class="navigation__link"
+            >
+              Новости
+            </a>
+          </li>
+
+          <li class="navigation__item">
+
+            <a
+              href="#"
+              class="navigation__link navigation__link--active"
+              active
+            >
+              Прайс-лист
+            </a>
+          </li>
+
+          <li class="navigation__item">
+
+            <a
+              href="#"
+              class="navigation__link"
+            >
+              Магазин
+            </a>
+          </li>
+
+          <li class="navigation__item">
+
+            <a
+              href="#"
+              class="navigation__link"
+            >
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="main-header__controls control">
+
+        <button class="control__enter button__control">
+
+          <p class="button__text">
+
+            <img
+              src="assets/img/log_icon.png"
+              type="button"
+              width="15"
+              height="15"
+              alt="#"
+              class="button__image"
+            >
+            Вход
+          </p>
+        </button>
+      </section>
+    </section>
+  </header>
+
+  <main class="content">
+
+    <section class="price">
+
+      <section class="price__container">
+
+        <h1 class="price__main-title">
+          Прайс-лист
+        </h1>
+
+        <ul class="price__navigation bread-crumbs__list">
+
+          <li class="bread-crumbs__item">
+
+            <a
+              href="index.html"
+              class="bread-crumbs__link"
+            >
+              Главная
+            </a>
+          </li>
+
+          <li class="bread-crumbs__item bread-crumbs__item--disabled">
+
+            <a
+              href="#"
+              class="bread-crumbs__link bread-crumbs__link--disabled"
+              disabled
+            >
+              Прайс-лист
+            </a>
+          </li>
+        </ul>
+
+        <div class="price__topic">
+
+          <b class="price__topic-text">
+            Истинно мужская классика
+          </b>
+        </div>
+
+        <div class="price__block">
+
+          <section class="price__description description-merch">
+
+            <h2 class="price__title description-merch__title">
+              Мы&nbsp;используем только <br>
+              лучшие средства:
+            </h2>
+
+            <ul class="description-merch__list">
+
+              <li class="description-merch__item">
+
+                <p class="description-merch__text">
+                  Baxter of California
+                </p>
+              </li>
+
+              <li class="description-merch__item">
+
+                <p class="description-merch__text">
+                  Mr Natty
+                </p>
+              </li>
+
+              <li class="description-merch__item">
+
+                <p class="description-merch__text">
+                  Suavecito
+                </p>
+              </li>
+
+              <li class="description-merch__item">
+
+                <p class="description-merch__text">
+                  Malin+Goetz
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="price__description services">
+
+            <h2 class="price__title services__title">
+              Цены на услуги <br>
+              наших мастеров:
+            </h2>
+
+            <table class="services__table">
+              <tbody class="services__tbody">
+
+              <tr class="services__row">
+
+                  <td class="services__desc">
+                    Стрижка
+                  </td>
+  
+                  <td class="services__desc services__desc--price">
+                    1500 ₽
+                    <!-- special value "rubles" -->
+                  </td>
+                </tr>
+  
+                <tr class="services__row">
+  
+                  <td class="services__desc">
+                    Стрижка бороды
+                  </td>
+  
+                  <td class="services__desc services__desc--price">
+                    500 ₽
+                    <!-- special value "rubles" -->
+                  </td>
+                </tr>
+  
+                <tr class="services__row">
+  
+                  <td class="services__desc">
+                    Накрутка усов
+                  </td>
+  
+                  <td class="services__desc services__desc--price">
+                    350 ₽
+                    <!-- special value "rubles" -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section class="price__description information-us">
+
+            <h2 class="price__title information-us__title">
+              Несколько слов о нас:
+            </h2>
+
+            <div class="information-us__container">
+
+              <p class="information-us__description">
+                Наша парикмахерская занимается исключительно мужскими
+                стрижками. Стрижка каждого клиента для нас - это
+                уникальная и продуманная до мелочей работа.
+                Мы не работаем на количество, мы делаем качество.
+              </p>
+
+              <p class="information-us__description">
+                Наша мастерская расположена в центре города, поэтому
+                сделать стильную стрижку можно в любое время, даже
+                в обеденный перерыв. Здесь вы можете погрузиться
+                в удобную для вас атмосферу, чувствовать себя
+                комфортно и свободно!
+              </p>
+            </div>
+          </section>
+        </div>
+
+      </section>
+    </section>
+  </main>
+
+
+  <footer class="main-footer">
+
+    <section class="main-footer__container">
+
+      <section class="main-footer__item information">
+
+        <h2 class="main-footer__title">
+          Барбершоп "Бородинский"
+        </h2>
+
+        <strong class="information__address">
+          Адрес:г.Санкт-Петербург, Б.Конюшенная, Д.19/18 <br>
+        </strong>
+
+        <a
+          href="#"
+          class="information__link"
+        >
+          Как нас найти?<br>
+        </a>
+
+        <strong class="information__phone">
+
+          <a href="tel:+7495660276">
+            +7(495)666-02-76
+          </a>
+        </strong>
+      </section>
+
+      <div class="main-footer__item media">
+
+        <h2 class="main-footer__title media__title">
+          Давайте дружить!
+        </h2>
+
+        <ul class="media__list">
+
+          <li class="media__item">
+
+            <a
+              href="#"
+              class="media__link"
+            >
+              Вконтакте
+
+              <img
+                src="assets/img/vkontakte.png"
+                alt="Вконтакте"
+                class="media__image"
+              >
+            </a>
+          </li>
+
+          <li class="media__item">
+
+            <a
+              href="#"
+              class="media__link"
+            >
+              Facebook
+
+              <img
+                src="assets/img/fcb.png"
+                alt="Facebook"
+                class="media__image"
+              >
+            </a>
+          </li>
+
+          <li class="media__item">
+
+            <a
+              href="#"
+              class="media__link"
+            >
+              Instagram
+
+              <img
+                src="assets/img/inst.png"
+                alt="Instagram"
+                class="media__image"
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="main-footer__item developer">
+
+        <h2 class="main-footer__title developer__title">
+          Разработано:
+        </h2>
+
+        <a
+          href="#"
+          class="developer__link button"
+        >
+          HTMLACADEMY
+        </a>
+      </section>
+    </section>
+  </footer>
+<script type="text/javascript" src="assets/js/app.js"></script></body>
+</html>
