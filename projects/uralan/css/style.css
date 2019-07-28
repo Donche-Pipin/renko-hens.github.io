@@ -1,0 +1,964 @@
+@font-face {
+    font-family: 'Bookman Old Style';
+    src: url('../fonts/BookmanOldStyle.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Bookman Old Style" , "Times New Roman" , serif; 
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 300;
+	color:#000000;
+
+	position: relative; /*for header*/
+	
+	background-color: #FFFFFF;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	width: 100%;
+	border: 0;
+	overflow: hidden;
+}
+
+.button {
+	/*Типографика*/
+	font: inherit;
+	font-family: "Oswald", Arial, sans-serif;
+	font-weight: 200;
+	
+	/*Позиционирование*/
+	text-align: center;
+	vertical-align: middle;
+
+	/*Оформление*/
+	color: #ffffff;
+	border: solid 1px transparent;
+	border-radius: 21px;
+
+	transition: 0.3s;
+}
+
+#back-top {
+	position: fixed;
+	bottom: 40px;
+	right: 8%;
+	z-index: 2;
+}
+
+#back-top a {
+	background: url(../img/up-arrow.png) no-repeat;
+	width: 64px;
+	height: 64px;
+	display: block;
+	margin-bottom: 8px;
+}
+
+/*header*/
+.main-header {
+	position: absolute;
+	min-width: 100%;
+}
+.main-nav { 
+	background-color: /*rgba(1, 137, 191, 0.6)*/ rgba(0,0,0,0.6) ;
+	text-align: center;
+}
+
+.ul-trigger{
+	margin: 0;
+	padding: 0;
+}
+
+.li-trigger{
+	display: inline-block;
+}
+
+.adress-trigger {
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 20px 22px;
+	transition: 0.3s;
+}
+
+.adress-trigger:hover {
+	color: #fff;
+	background: rgba(1, 137, 191, 1);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset, 0px 1px 0px rgba(255, 255, 255, 0.1);
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.menu-trigger {
+	color: #0092CB;
+	font-weight: bold;
+	display: none;
+}
+.menu-trigger:hover {
+	color: #fff;
+	background: rgba(1, 137, 191, 1);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset, 0px 1px 0px rgba(255, 255, 255, 0.1);
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/*Главный заголовок*/
+
+.main-title {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 980px;
+
+	font-family:'Prata', serif;
+	font-weight: 200;
+	
+	color: #ffffff;
+	/*высота блока и мин значения*/
+	height: 100vh;
+	min-height: 790px;
+	max-height: 1000px;
+
+}
+.sh {
+	text-align: center;
+}
+
+.main-title h1 {
+	margin-bottom:0;
+	font-size: 96px;
+	font-weight: 200;
+}
+.main-title p {
+	margin-top: 38px;
+	font-size: 43px;
+}
+
+/*Меню*/
+
+.menu {
+	color: #002939;
+	margin: 0;
+	padding: 0;
+}
+
+.menu h2 {
+	font-size: 40px;
+	font-weight: 400;
+
+	margin: 0;
+	line-height: 3.5;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+/*Блок который хранит все UL*/
+.menu-table {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+/*UL*/
+.menu-list {
+	list-style: none;
+}
+
+.steak {
+	margin: 0;
+	/*padding-left:60px;*/
+	/*padding-right: 15px;*/
+	padding-left: 60px;
+	padding-right: 62px;
+	padding-bottom: 32px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	/*flex-basis: 600px;*/
+	flex-basis:500px;
+}
+
+.shas{
+	margin: 0;
+
+/*	padding-left: 15px;
+	padding-right:60px;*/
+	padding-left: 62px;
+	padding-right: 60px;
+	padding-bottom: 32px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	/*flex-basis: 600px;*/
+	flex-basis: 500px;
+}
+
+
+/*Стейки Эксклюзи Мангал*/
+
+.menu-title {
+	font-family: "Bookman Old Style" , "Times New Roman" , serif; 
+	
+	display: flex;
+	justify-content: center;
+
+	text-align: center;  /* выравнивание заголовка по центру обертки */
+	min-width: 100%;     /* ширина обертки. На самом деле для фиксированной верстки можно использовать и px, но лучше сразу адаптировать
+							 под разные устройства, т.к. это, что называется, тренди :-) */
+	margin: 0 auto;      /* выравнивание обертки по центру документа */
+	overflow: hidden;
+}
+
+.menu-title h3 {
+
+	font-size: 32px;
+	font-weight: 400;
+
+	position: relative;
+}
+
+.menu-title h3:before {
+    display: block;      /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
+    width:1000px;        /* устанавливаем ширину линию. Можно использовать произвольную ширину */
+    content: '';         /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
+    position: absolute;  /* абсолютное позиционирование для управления линиями */
+    border-bottom: 2px solid #9D9017;   /* бордер псевдо дива, т.е. сама линия */
+    top:50%;             /* позиционирование по вертикали */
+    right: 160px;   	 /* позиционирование по горизонтали */
+}
+ 
+/* аналогичные стили для второго псевдоэлемента */
+ 
+.menu-title h3:after {
+    display: block;
+    width:1000px;
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #9D9017;
+    top:50%;
+    left: 160px; 
+}
+
+/*класс для полосок экслюзива*/
+.menu-exs h3:before {
+    right: 220px; 	/* позиционирование по горизонтали */
+}
+ 
+/* аналогичные стили для второго псевдоэлемента */
+ 
+.menu-exs h3:after {
+    left: 220px; 
+}
+
+/*LI*/
+.menu-item {
+
+	border-bottom: 1px solid #D6D6D6;
+	
+	font-size: 24px;
+	line-height: 2;
+	font-family: "Oswald" , Arial , sans-serif;
+	font-weight: 300;
+	display:flex;
+	justify-content: space-between;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+}
+/*
+.description {
+	font-size: 24px;
+	text-align: center;
+	margin: 0 auto;
+	min-width: 200px;
+	max-width: 1115px;
+}*/
+.description p {
+	margin: 0;
+	padding: 0 35px;
+
+	font-family: "Oswald" , Arial , sans-serif;
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+.btn-menu {
+	display: flex;
+	justify-content:center;
+	align-self: center;
+	
+	padding-top: 10px;
+	padding-bottom: 16px;
+	padding-left: 100px;
+	padding-right: 100px;
+	
+	margin-top: 22px;
+	margin-bottom: 22px;
+	
+	font-size: 24px;
+	font-weight: 300;
+	color: #0092CB;
+
+}
+
+.btn-pdf {
+	background-image:url('../img/pdf.svg');
+	background-position: 20% 50%;
+	background-size:  25% auto;
+	background-repeat: no-repeat;
+	border: 2px solid #0092CB;
+
+	padding: 24px 48px 24px 96px;
+}
+
+/*Бронирование ресторана*/
+.reservation {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+/*		background-color: #000000;
+		background-image: url(../img/bg2.jpg);
+		background-size: cover;
+		background-position: 40% 50%;
+		background-repeat: no-repeat;
+		
+*/
+		height: 100vh;
+		min-height: 500px;
+		max-height: 610px;
+
+		color: #EDEDED;
+	}
+
+.reservation h2 {
+	font-weight: 400;
+	font-size: 40px;
+	margin: 0;
+}
+
+.short-title {
+	font-family: "Oswald", Arial ,sans-serif;
+	font-size: 24px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.btn-reserv {
+	background-color: #0189BF;
+	padding: 24px 16px 24px 16px;
+
+	font-size: 24px;
+	transition: 0.3s;
+}
+
+.btn-reserv:hover {
+	background-color: #01a5e6 /*#009edd*/;
+}
+/*Расписание кинотеатра*/
+
+
+/*Заголовок*/
+.timetable {
+	color: #002939;
+}
+.timetable h2 {
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 3;
+
+	text-align: center;
+	
+	margin: 0;
+}
+
+.timetable .short-title {  /* для настройки подзаголовка */
+	font-weight: 300;
+	font-size: 32px;
+	line-height: 1.5;
+
+	text-align: center;
+
+	margin: 0;
+}
+
+/*Сам UL и Li*/
+.time-list {
+	margin: 0;
+	padding: 0;
+	margin-top: 16px;
+	margin-bottom: 96px;
+
+	list-style: none;
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-basis: 340px 500px;
+}
+
+.time-item {
+	display: flex;
+	flex-direction:column;
+
+	padding:33px;
+}
+/*Изображения и цензор с расписанием*/
+
+/*общие значения*/
+.time-image {
+	background-position: cover;
+	background-size: 100% 100%;
+
+	width: 100%;
+	height: 249px;
+
+	display: flex;
+	flex-wrap: wrap-reverse;
+	flex-direction: column;
+	justify-content:space-between;
+}
+
+/*изображения*/
+.time-image1 {
+	background-image: url(../img/1.jpg);
+}
+
+.time-image2 {
+	background-image: url(../img/2.jpg);
+}
+
+.time-image3 {
+	background-image: url(../img/3.jpg);
+}
+
+.time-image4 {
+	background-image: url(../img/4.jpg);
+}
+
+.time-image5 {
+	background-image: url(../img/5.jpg);
+}
+
+.time-image6 {
+	background-image: url(../img/6.jpg);
+}
+
+/*цензура на изображении*/
+.censor {
+	 width: 64px;
+	 height: 64px;
+
+	 display: block;
+
+	 border-radius: 50px;
+	 -moz-border-radius: 50px;
+	 -webkit-border-radius: 50px;
+	 -khtml-border-radius: 50px;
+
+	 font-family: "Oswald", Arial ,sans-serif;
+	 font-size: 28px;
+	 line-height: 2.25;
+	 text-align: center;
+
+	 background: #FFE924;
+
+	 align-self: flex-end; /*Для расстановки круга*/
+}
+/*блок с ценой на изображении*/
+.ticket {
+	width: 125px;
+	height: 50px;
+
+	display: block;
+
+	font-family: "Oswald", Arial , sans-serif;
+	font-size: 28px;
+	line-height: 1.8;
+	text-align: center;
+
+	background: #FFE924;
+
+	align-self: flex-start; /*Для расстановки прямоугольника*/
+} 
+
+/*Текст расписания */
+/*блок заголовка фильма*/
+.time-name {
+	width: 330px; /* Не уверен но это помогает текст заголовка*/
+	height: 150px;
+
+	display: block;  /*перенести на новую строчку*/
+}
+/*заголовок фильма*/
+.time-name h3 {
+	font-size: 28px;
+	line-height: 1.3;
+	font-weight: 400;
+}
+
+/*время и картинка*/
+.time-clock{
+	margin-top: 20px;
+	display: flex;
+	align-items: center; /*  центрирование элементов по вертикали*/
+}
+
+.time-clock p {
+	display: flex;
+	align-items: center; 
+
+	font-family: "Oswald", Arial , sans-serif;
+	font-size: 24px;
+	line-height: 1.1;
+	font-weight: 400;
+	
+	padding-left:20px;  /*для отступа времени расписания*/
+	}
+
+.time-clock img {
+	width: 50px;
+	height: 45px;
+}
+/*Кароке-клуб*/
+
+.karaoke {
+/*	background-color: #242222;
+	background-image: url(../img/karaoke-parallax.jpg);
+	background-size: cover;
+	background-position: 25% 25%;*/
+	color: #ffffff;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	height: 70vh;
+	min-height: 500px;
+	max-height: 610px;
+	padding-bottom: 20px;
+
+}
+
+.karaoke h2 {
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 1.2;
+
+	text-align: center;
+
+}
+.btn-karaoke {
+	background-color: #0189BF;
+	padding: 24px 39px 24px 39px;
+
+	font-size: 24px;
+}
+
+.btn-karaoke:hover {
+	background-color: #01a5e6 /*#009edd*/;
+}
+
+/*Бильярд*/
+.billiard {
+	color: #002939;
+	overflow: hidden;	/*Скрывает зазоры между блоками*/
+	margin-bottom: 100px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+
+.bil-img {
+	background-image: url(../img/block7.jpg);
+	background-size: cover;
+	background-position: 40% 50%;
+
+	width: 36%;
+	height: 540px;
+
+	margin-top: 100px;
+	overflow: hidden;
+}
+
+.bil-text {
+	padding-left: 104px;
+	padding-right: 50px;
+}
+
+.billiard h2 {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 1.5;
+
+	margin-top: 80px;
+}
+
+.billiard p {
+	font-family: "Oswald", Arial ,sans-serif;
+	font-size: 24px;
+	line-height: 1.5;
+	font-weight: 200;
+}
+
+/*Отзывы*/
+.comments {
+	background-color: #242222;
+	background-image: url(../img/bg4.jpg); /*Поменять цвет фона*/
+	background-size: cover;
+	background-position: 30% 50%;
+	overflow:hidden;	/*Скрывает зазоры между блоками*/
+}
+
+.comments {
+	color: #ffffff;
+	font-family: "Oswald", Arial ,sans-serif;
+	font-weight: 200;
+	font-size: 24px;
+	line-height: 1.5;
+
+	text-align: center;
+	padding: 100px 220px;
+}
+
+/*Галерея*/
+
+.gallery {	
+	color: #002939;
+	background-color: rgba(136, 124, 64, 0.24);
+	overflow:hidden;	/*Скрывает зазоры между блоками*/
+	padding-bottom: 116px;
+} 
+
+.gallery h2 {
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 3.5;
+	text-align: center;
+	margin: 10px;
+}
+
+/*Детская комната*/
+
+.kids {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	height: 70vh;
+	min-height: 500px;
+	max-height: 610px;
+	padding-bottom: 20px;
+
+	background-color: #242222;
+	background-image: url(../img/bg5.jpg);
+	background-size: cover;
+	background-position: 40% 50%;
+	overflow:hidden; /*Скрывает зазоры между блоками*/
+}
+
+.kids h2 {
+	font-size: 40px;
+	line-height: 1.5;
+	font-weight: 300;
+	letter-spacing: 10%;
+	color: #ffffff;
+}
+
+.btn-kids {
+	background-color: #0189BF;
+	padding: 24px 48px 24px 48px;
+	font-size: 24px;
+}
+.btn-kids:hover {
+	background-color: #01a5e6 /*#009edd*/;
+}
+
+/*Салон красоты*/
+.barbershop {
+	background-color: #f2f2f2;
+	overflow: hidden;	/*Скрывает зазоры между блоками*/
+	padding-bottom: 100px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+
+	color: #002939;
+}
+.barb-image{
+	background-image: url(../img/block8.jpg);
+	background-size: cover;
+	background-position: 40% 50%;
+
+	width: 35%;
+	height: 550px;
+
+	margin-top: 100px;
+	overflow: hidden;
+	}
+
+.barb-text {
+	padding-left: 100px;
+	padding-right: 50px;
+}
+
+.barbershop h2 {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 1.5;
+
+	margin-top: 85px;
+}
+
+.barbershop p {
+	font-family: "Oswald", Arial ,sans-serif;
+	font-size: 24px;
+	line-height: 1.5;
+	font-weight: 200;
+
+	padding-bottom: 36px;
+	
+}
+
+.btn-brb {
+	font-size: 24px;
+
+	background-color: #0189BF;
+	padding: 24px 48px 24px 48px;
+
+}
+
+.btn-brb:hover {
+	background-color: #01a5e6 /*#009edd*/;
+}
+
+/*Контакты*/
+
+.contacts {
+	background-color: #1b1b1b;
+	overflow:hidden;	/*Скрывает зазоры между блоками*/
+	color: #ffffff;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.contacts > img {
+	max-width:200px;
+	max-height:200px; 
+}
+.contacts-list {
+	list-style: none;
+}
+.contacts-img {
+	padding: 60px 36px;
+}
+.contacts-img > a > img {
+	width: 48px;
+	height: 48px; 
+}
+.contacts-item {
+	font-family: "Oswald", Arial ,sans-serif;
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 200;
+
+	padding: 32px 0;
+}
+.contacts-tel {
+	padding: 32px 36px;
+}
+
+.contacts-adress, .contacts-time {
+	padding-right: 56px;
+}
+/*Права*/
+
+.copyright {
+	font-family: Roboto, Arial, sans-serif;
+	background-color: #3b3b3b;
+	color: #ffffff;
+	/*Исправляет выпадение отступов блока*/
+	overflow:hidden;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+.copyright-slasher {
+	font-size: 19px;
+	line-height: 20px;
+	text-align: center;
+	margin-left: 360px;
+	flex-grow: 3;
+	align-self: center;
+}
+
+.copyright-addres {
+	align-self: center;
+	margin-right: 160px;
+}
+.copyright-list {	
+	list-style: none;
+	padding:0;
+}
+.copyright-item a {
+	color: #ffffff;
+	font-size: 19px;
+}
+.copyright-item a:hover,
+.copyright-item a:focus {
+	color: #0092cb;
+}
+
+/*Стили формы бронирования (модалка)*/
+.white-popup-block {
+  position: relative;
+  padding: 30px;
+  width: auto;
+  max-width: 350px;
+  margin: 20px auto;
+  background-color: #f8f3f0;
+}
+.tables {
+	margin: 0;
+	padding:0px;
+}
+.tables img {
+	width: 100%;
+	height: auto;
+}
+.white-popup-block h3 {
+	margin: 0;
+	font-size: 20px;
+	line-height: 1;
+	text-align: center;
+}
+.white-popup-block p {
+	font-size: 18px;
+	text-align: center;
+}
+
+/*Стили формы караоке (модалка)*/
+.white-popup-karaoke {
+  position: relative;
+  padding: 30px;
+  width: auto;
+  max-width: 350px;
+  margin: 20px auto;
+  background-color: #f8f3f0;
+}
+.white-popup-karaoke h3 {
+	margin: 0;
+	font-size: 20px;
+	line-height: 1;
+	text-align: center;
+}
+.white-popup-karaoke p {
+	font-size: 18px;
+	text-align: center;
+}
+
+/*Стили для детской комнаты (модалка)*/
+.white-popup-kids {
+  position: relative;
+  padding: 30px;
+  width: auto;
+  max-width: 350px;
+  margin: 20px auto;
+  background-color: #f8f3f0;
+}
+
+.white-popup-kids h3 {
+	margin: 0;
+	font-size: 20px;
+	line-height: 1;
+	text-align: center;
+}
+.white-popup-kids p {
+	font-size: 18px;
+	text-align: center;
+}
+		
+@media (min-width: 769px) and (max-width:1078px){
+/*Для меню бара */
+.ul-trigger{
+	display: none;
+}
+
+.li-trigger{
+	display: block;
+}
+
+.menu-trigger{
+	box-sizing: border-box;
+	padding: 20px;
+	display: block;
+	}
+	.menu-trigger img {
+	 height: 64px;
+	 width: 64px;
+	}
+}
+
+@media (max-width: 768px){
+
+	/*Для меню бара */
+	.ul-trigger{
+		display: none;
+	}
+
+	.li-trigger{
+		display: block;
+	}
+
+	.menu-trigger{
+		box-sizing: border-box;
+		padding: 20px;
+		display: block;
+		}
+		.menu-trigger img {
+		 height: 64px;
+		 width: 64px;
+		}
+
+	#back-top a {
+		background: url(../img/up-arrow2.png) no-repeat;
+		width: 128px;
+		height: 128px;
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	.description {
+		font-size: 24px;
+		text-align: center;
+		margin: 0;
+	}
+	.description p {
+		padding: 0 0px;
+	}
+
+	}
