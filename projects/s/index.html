@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+  <script>
+    if('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
+      document.write('<link rel="stylesheet" href="assets/css/style.css">');
+    } else {
+      document.write('<link rel="stylesheet" href="assets/css/style-fallback.css">');
+    }
+  </script>
+
+  <noscript>
+    <link rel="stylesheet" href="assets/css/style-fallback.css">
+  </noscript>
+  
+  <title>UTools</title>
+</head>
+
+<body>
+  <main class="main">
+    <section class="autorization">
+      <div class="autorization__container grid">
+        <div class="block col-12@xs col-6@sm col-5@md flex justify-center@xs justify-end@lg items-center@xs">
+            <div class="block__wrapper login-form   max-width-xxxxs">
+            
+                <div class="autorization__picture">
+                  <img class="logotype" src="assets/img/logo.svg" alt="Logotype">
+                </div>
+                  
+                <h2 class="title text-center@xs text-left@sm text-bold">
+                  Вход
+                </h2>
+      
+                <form class="form">
+      
+                  <div class="form__wrapper-input">
+                    <label class="form__label form-label" for="inputEmail1">
+                      Почта
+                    </label>
+                    <input class="form__input form-control width-100%" type="email" name="inputEmail1" id="inputEmail1" placeholder="email@myemail.com">
+                  </div>
+      
+                  <div class="form__wrapper-input">
+                    <div class="form__wrapper-text flex justify-between">
+                      <div class="form__wrapper-label">
+                        <label class="form__label form-label" for="inputCode1">
+                          Код
+                        </label> 
+                        <span class="form__tooltip tooltip-trigger js-tooltip-trigger" data-tooltip-position="right" title="Код авторизации будет отправлен вам на указанную почту"></span>
+                      </div>
+
+                      <span class="text-sm">
+                        <a class="form__link form__link--helper" href="#0">
+                          Не получили код?
+                        </a>
+                      </span>
+
+                    </div>
+                    <input class="form__input form-control width-100%" aria-invalid="true" type="text" name="inputCode1" id="inputCode1">
+                  </div>
+      
+                  <div class="form__wrapper-input">
+                      <div class="form__wrapper-text flex justify-between">
+                        <div class="form__wrapper-label">
+                          <label class="form__label form-label" for="inputCode1">
+                            Промокод
+                          </label> 
+                          <span class="form__tooltip tooltip-trigger js-tooltip-trigger" data-tooltip-position="right" title="Введите реферальный промокод для регистрации на платформе"></span>
+                        </div>
+                      </div>
+                      <input class="form__input form-control width-100%" type="password" name="inputPromo1" id="inputPromo1">
+                  </div>
+      
+                  <div class="form__wrapper-checkbox flex items-center">
+                      <div class="form__block-checkbox custom-checkbox">
+                          <input class="custom-checkbox__input" type="checkbox" id="custom-checkbox1">
+                          <div class="custom-checkbox__control" aria-hidden="true"></div>
+                      </div>
+                        <label class="text-sm" for="custom-checkbox1">
+                          Оставаться в системе
+                        </label>
+                  </div>
+      
+                  <div class="form__wrapper-checkbox flex items-start">
+                      <div class="form__block-checkbox custom-checkbox">
+                          <input class="custom-checkbox__input" type="checkbox">
+                          <div class="custom-checkbox__control" aria-hidden="true"></div>
+                      </div>
+                        <label class="form__registration-text text-sm">
+                          Регистрируясь в системе, я даю согласие
+                          на&nbsp;<a class="form__link form__link--nope-decoration" href="#0">обработку персональных данных </a> 
+                          и&nbsp;<a class="form__link form__link--nope-decoration" href="#0">принимаю политику конфиденциальности
+                          </a>
+                        </label>
+                  </div>
+      
+                  <div class="form__wrapper-button">
+                    <button class="form__button btn btn--primary width-100%" type="button">
+                        <span class="btn__label">
+                          Получить код для входа
+                        </span>
+                    </button>
+                    <button class="form__button btn btn--primary width-100%" type="button">
+                        <span class="btn__label">
+                          Войти
+                        </span>
+                    </button>
+                  </div>
+      
+                </form>
+            </div>
+        </div>
+
+        <div class="block promo display@sm col-6@sm col-7@md flex justify-center@md justify-start@lg items-center">
+          <div class="promo__wrapper max-width-xxs">
+              <div class="promo__text text-component text-left">
+                <h1 class="promo__title text-xxl">
+                  UTools — конструктор вашей бонусной системы
+                </h1>
+                <p class="promo__description max-width-xxxs">
+                  Вы сами выбираете, какую программу лояльности выбрать для своих клиентов
+                </p>
+              </div>
+
+              <img class="promo__image" src="assets/img/group-84.svg" alt="Picture constructor">
+          </div>            
+        </div>
+      </div>
+    </section>
+  </main>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

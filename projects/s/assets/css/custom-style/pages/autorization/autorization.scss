@@ -1,0 +1,151 @@
+ // Растягиваю блок по всей высоте
+.autorization__container {
+  min-height: 100vh;
+}
+
+@include breakpoint(xs) {
+  .login-form {
+    width: calc(100% - 2*var(--component-padding));
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include breakpoint(md) {
+  .login-form {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.block__wrapper {
+  padding-top: var(--space-md);  
+  padding-bottom: var(--space-md);
+}
+
+@include breakpoint(lg) {
+  .block__wrapper {
+    margin-left: auto;
+    margin-right: 104px;
+  }
+}
+
+.autorization__picture {
+  max-width: 80px;
+}
+
+.logotype {
+  width: 100%;
+}
+
+// margin-top: 90px - 12px
+.title {          
+  margin-top: calc(var(--space-xl) - var(--space-xs));
+}
+
+.form {
+  margin-top: calc(var(--space-lg) + var(--space-xs));
+}
+
+.form__input {
+  margin-top: var(--space-xs);
+}
+
+.form__wrapper-input:not(:first-child) {
+  margin-top: var(--space-md);
+}
+
+.form__wrapper-label {
+  position: relative;
+}
+
+.form__tooltip {
+  position: relative;
+  top: -50%;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("/assets/img/help.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form__link:focus,
+.form__link:active,
+.form__link:hover {
+  color: var(--color-primary-lighter);
+}
+
+.form__link--helper {
+  color: var(--color-contrast-high);
+  text-decoration: none;
+}
+
+.form__link--helper:focus,
+.form__link--helper:active,
+.form__link--helper:hover {
+  color: var(--color-contrast-medium);
+}
+
+.form__wrapper-checkbox {
+  margin-top: calc(var(--space-md) - var(--space-xxxs));
+}
+
+.form__block-checkbox {
+  margin-right: var(--space-xxs);
+}
+
+.form__link--nope-decoration {
+  text-decoration: none;
+}
+
+.form__wrapper-button {
+  margin-top: calc(var(--space-md) + var(--space-xxxs) / 2);
+}
+
+.form__button {
+  font-weight: bold;
+}
+
+.form__button:hover,
+.form__button:focus {
+  transition: background-color 0.2s;
+  background-color: var(--color-hover-btn);
+}
+  
+.form__button:active {
+  background-color: var(--color-hover-btn-dark);
+}
+
+.form__button:not(:last-child)  {
+  margin-bottom: var(--space-sm);
+}
+
+// Promo
+.promo {
+  background-color: var(--color-primary);
+  padding: var(--space-xl) var(--space-sm);
+}
+
+@include breakpoint(lg) {
+  .promo__wrapper {
+    margin-left: var(--space-xl);
+  }
+}
+
+.promo__text {
+  color: var(--color-white);
+}
+
+.promo__title {
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.promo__description {
+  margin-top: var(--space-md);
+}
+
+.promo__image {
+  margin-top: var(--space-md);
+}
